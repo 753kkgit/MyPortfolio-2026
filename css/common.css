@@ -7,7 +7,7 @@ common
 }
 html {
     scroll-behavior: smooth;
-    font-family: "Zen Old Mincho", "Noto Sans JP", serif;
+    font-family: "Noto Sans JP", serif;
 }
 .inner {
     margin: auto;
