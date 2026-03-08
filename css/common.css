@@ -2,12 +2,12 @@
 common
 ==============================================================================*/
 :root {
-    --main-color: ;
-    --sub-color: ;
-    --accent-color: ;
+    --main-color: #333;
+    --accent-color: #fbe028;
 }
 html {
     scroll-behavior: smooth;
+    font-family: "Zen Old Mincho", "Noto Sans JP", serif;
 }
 .inner {
     margin: auto;
@@ -88,10 +88,10 @@ swiper
     width: 5px;
     height: 5px;
     border-radius: 15px;
-    background: #333333;
+    background: var(--main-color);
 }
 .swiper-pagination-bullet-active {
-    background: #fbe028;
+    background: var(--accent-color);
 }
 .swiper-slide > .wrapper_top > .container_about > .bg_gray > .txt_about > .marker-animation {
     background-image: -webkit-linear-gradient(left, transparent 50%, rgb(255,215,0) 50%);
@@ -128,38 +128,30 @@ body.open {
     right: 0;
     visibility: hidden;
 }
-
 .overlay.open {
     visibility: visible;
 }
-
-
-
 .modal img{
     width: 80%;
     margin: 60px auto 0;
     display: block;
     height: auto;
 }
-
 .modal::-webkit-scrollbar {
     display: none;
 }
-
 .modal.open {
     display: block;
     overflow-x: hidden;
     z-index: 100;
     background: #fff;
 }
-
 .modal__inner {
     background: #fff;
     display: flex;
     justify-content: space-between;
     padding: 70px 40px 70px;
 }
-
 .modal__l {
     width: 48%;
 }
@@ -169,12 +161,9 @@ body.open {
 .modal__r {
     width: 48%;
 }
-
 .modal-btn {
     border: solid 1px #000;
 }
-
-
 .modal {
     max-width: 730px;
     width: 80%;
@@ -188,11 +177,9 @@ body.open {
     display: none;
     background: #fff;
 }
-
 .close-icon__wrapper {
     position: relative;
 }
-
 .close-icon {
     position: absolute;
     top: -44px;
@@ -230,24 +217,6 @@ body.open {
     margin-top: 0 !important;
 }
 .modal__r {width: 100%;margin: 40px auto 0;}
-
-.modal-btn {
-}
-
-.modal {
-}
-
-.close-icon {
-}
-.close-icon::before,
-.close-icon::after {
-}
-.close-icon::before {
-
-}
-.close-icon::after {
-}
-    
 }
 
 
@@ -259,17 +228,14 @@ Animation
     transform: translateY(24px);
     transition: opacity .8s ease, transform .8s ease;
 }
-
 .fade-target.fade-in {
     opacity: 1;
     transform: translateY(0);
 }
-
 .ripple-target {
     position: relative;
     overflow: hidden;
 }
-
 .ripple-target::after {
     content: "";
     position: absolute;
@@ -283,11 +249,9 @@ Animation
     transform: scale(0);
     pointer-events: none;
 }
-
 .ripple-target.ripple-on::after {
     animation: ripple-wave 0.4s ease-out;
 }
-
 @keyframes ripple-wave {
     0% {
         opacity: .8;
@@ -309,7 +273,6 @@ loading
 body.is-loading {
     overflow: hidden;
 }
-
 .loading-screen {
     position: fixed;
     inset: 0;
@@ -321,19 +284,16 @@ body.is-loading {
     overflow: hidden;
     transform-origin: top center;
 }
-
 .loading-screen__inner {
     position: relative;
     z-index: 2;
 }
-
 .loading-screen__text {
     font-size: 22px;
     letter-spacing: 0.2em;
-    color: #333;
+    color: var(--main-color);
     animation: loadingText 1.2s ease-in-out infinite;
 }
-
 .loading-screen::after {
     content: "";
     position: absolute;
@@ -395,25 +355,21 @@ body.is-loading {
         box-shadow: 0 30px 60px rgba(0,0,0,0.12);
     }
 }
-
 @media all and (max-width: 768px) {
     .loading-screen__text {
         font-size: 18px;
     }
 }
-
 body.is-loading .swiper,
 body.is-loading .sp,
 body.is-loading header {
     opacity: 0;
 }
-
 .swiper,
 .sp,
 header {
     transition: opacity .5s ease;
 }
-
 body:not(.is-loading) .swiper,
 body:not(.is-loading) .sp,
 body:not(.is-loading) header {
