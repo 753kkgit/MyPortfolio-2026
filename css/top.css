@@ -1,0 +1,109 @@
+/* =============================================================================
+fv
+==============================================================================*/
+.fv {
+
+}
+.fv__copy {font-size: 50px;display: block;margin: auto;line-height: 1.2;}
+.fv__title {font-size: 18px;margin: 20px auto 0;letter-spacing: 0.2em;}
+
+@media all and (max-width: 768px) {
+    .fv {
+
+    }
+    .fv__copy {
+    font-size: 35px;
+    line-height: 1.4;
+    }
+    .fv__title {
+    
+    }
+}
+
+/* =============================================================================
+about
+==============================================================================*/
+.about {
+
+}
+.about__text {line-height: 1.6;}
+
+@media all and (max-width: 768px) {
+    .about {
+
+    }
+    .about__text {
+    line-height: 1.8;
+    }
+}
+
+/* =============================================================================
+works
+==============================================================================*/
+.works {
+
+}
+.works__notes {margin: 0 auto 20px;}
+.works__box {display: flex;gap: 20px;}
+.works__item {width: 33%;}
+.works__thumb {
+    max-width: 630px;
+    height: auto;
+}
+.works__item-title {font-size: 20px;margin-bottom: 20px;line-height: 1.4;}
+.works__item-description01 {line-height: 1.4;font-size: 15px;}
+
+@media all and (max-width: 768px) {
+    .works {
+
+    }
+    .works__notes {
+    line-height: 1.8;
+    }
+    .works__box {
+    display: block;
+    }
+    .works__item {
+    width: 100%;
+    }
+    .works__thumb {
+        max-width: unset;
+        width: 100%;
+    }
+    .works__item-title {
+    font-size: 18px;
+    }
+    .works__item-description01 {
+        font-size: 12px;
+    }
+}
+
+/* =============================================================================
+skill
+==============================================================================*/
+.skill {
+
+}
+
+@media all and (max-width: 768px) {
+    .skill {
+
+    }
+}
+
+/* =============================================================================
+contacts
+==============================================================================*/
+.contact {
+
+}
+.contact__text {
+    line-height: 1.6;
+}
+
+@media all and (max-width: 768px) {
+    .contact {
+
+    }    
+}
+
