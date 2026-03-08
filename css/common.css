@@ -329,6 +329,7 @@ body.is-loading {
     animation: none;
     opacity: 0;
     transition: opacity 0.3s ease;
+    font-family: "Noto Sans JP";
 }
 
 .loading-screen.is-loaded::after {
