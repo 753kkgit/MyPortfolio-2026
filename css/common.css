@@ -26,6 +26,7 @@ html {
     }
     .title {
         line-height: 1.4;
+        font-size: 7vw;
     }
 }
 
@@ -293,6 +294,7 @@ body.is-loading {
     letter-spacing: 0.2em;
     color: var(--main-color);
     animation: loadingText 1.2s ease-in-out infinite;
+    font-family: "Noto Sans JP";
 }
 .loading-screen::after {
     content: "";
