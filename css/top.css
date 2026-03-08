@@ -5,7 +5,7 @@ fv
 .fv__title {font-size: 18px;margin: 20px auto 0;letter-spacing: 0.2em;}
 @media all and (max-width: 768px) {
     .fv__copy {
-    font-size: 35px;
+    font-size: 9vw;
     line-height: 1.4;
     }
 }
